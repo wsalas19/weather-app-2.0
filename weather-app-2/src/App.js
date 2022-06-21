@@ -2,12 +2,12 @@
 import './App.css';
 import Card from './components/Card.jsx';
 import Cards from './components/Cards.jsx';
-import SearchBar from './components/SearchBar.jsx';
+import NavBar from './components/NavBar';
 import data, { Cairns } from './data.js';
 
 function App() {
   return <>
-  <SearchBar onSearch={()=>alert("search city")}/>
+  <NavBar onSearch={()=>alert("city search")}/>
 
   <Card
      name={Cairns.name}
