@@ -4,8 +4,9 @@ import SearchBar from "./SearchBar";
 function NavBar({onSearch}) {
     return(
     <div className="navBar">
-        <img src="####" alt="logo" />
-        <SearchBar onSearch={onSearch}/>
+        <div className="navBarIzquierda"> <img src="####" alt="logo" /></div>
+        <div className="navBarDerecha"> <SearchBar onSearch={onSearch}/></div>
+       
 
     </div>
     );

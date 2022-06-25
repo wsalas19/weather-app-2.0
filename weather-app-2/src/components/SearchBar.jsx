@@ -1,7 +1,7 @@
 function SearchBar({onSearch}) {
     return <div>
-        <input type="text" placeholder="city.." />
-        <button onClick={onSearch}>Search</button>
+        <input className="inputSb" type="text" placeholder="city.." />
+        <button className="searchButton" onClick={onSearch}>Search</button>
     </div>;
 }
 
