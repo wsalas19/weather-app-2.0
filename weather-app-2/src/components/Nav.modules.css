@@ -1,0 +1,12 @@
+.bar{
+    background-color: 	#232f3e;
+    display: flex;
+}
+.left{
+    display: flex;
+    width: 50%;
+}
+.right{
+    display: flex;
+    width: 50%;
+}
