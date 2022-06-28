@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.bar{
+    background-color: 	#232f3e;
+    display: flex;
+    height: 65px;
+}
+.left{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10px;
+}
+.right{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+
+}
+
+.title{
+    font-family: 'Pacifico', cursive;
+    color: aliceblue;
+}
+.cloud{
+   width: 58px;
+   margin-right: 20px;
+}
+.links{
+  padding: 10px;
+}
