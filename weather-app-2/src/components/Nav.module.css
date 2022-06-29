@@ -31,4 +31,9 @@
 }
 .links{
   padding: 10px;
+  color: aliceblue;
+ 
+}
+.links:hover{
+    cursor: pointer;
 }

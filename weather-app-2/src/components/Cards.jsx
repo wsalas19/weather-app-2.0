@@ -1,18 +1,20 @@
 import Card from "./Card";
 
-function Cards({array}) {
+function Cards({array,onClose}) {
     return <div>
-      {array.map(city=>{
-        return(
-        <Card
-            key={array.indexOf(city)}
-            name={city.name}
-            max={city.main.temp_max}
-            min={city.main.temp_min}
-            img={`http://openweathermap.org/img/wn/${city.weather[0].icon}@2x.png`}
-            onClose={() => alert(city.name)}
-        />
-        )})}
+      {
+        array.map((city,i)=>{
+          return <Card
+          key={i} 
+          id={city.id}
+          name={city.name} 
+          min={city.min} 
+          max= {city.max} 
+          img ={city.img} 
+          onClose={onClose}
+          />
+        })
+      }
             </div>
 }
 

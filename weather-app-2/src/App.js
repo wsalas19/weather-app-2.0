@@ -5,14 +5,19 @@ import Cards from './components/Cards.jsx';
 import Nav from './components/Nav';
 import SearchBar from './components/SearchBar';
 import data, { Cairns } from './data.js';
+import {Routes, Route, Switch} from "react-router-dom"
+import Home from './components/Home';
 
 function App() {
   return (
   <div className='App'>
     <Nav/>
-    <h1>Hola Mundo!</h1>
-    <SearchBar onSearch={()=>alert("city search")}/>
 
+    <Routes>
+      <Route exact path="/" element={<Home/>}/>
+  
+
+    </Routes>
   
   </div>
   )

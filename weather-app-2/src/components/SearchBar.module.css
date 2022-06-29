@@ -1,0 +1,21 @@
+.searchbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    padding: 25px;
+}
+.input{
+    border-radius: 5px;
+    height: 20px;
+    margin-right: 3px;
+}
+.btn{
+    background-color: rgb(255, 214, 7);
+    border: none;
+    border-radius: 5px;
+    height: 27px;
+    color: #232f3e;
+    font-weight: bold;
+    margin-right: 3px;
+}

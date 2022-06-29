@@ -1,0 +1,6 @@
+.nothing{
+    display: flex;
+    justify-content: center;
+    color:rgb(161, 161, 161);
+    font-weight: lighter;
+}
