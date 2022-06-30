@@ -13,11 +13,13 @@ const [city, setCity] = useState("")
     if (event.key === 'Enter') {
       onSearch(city);
       setCity("");
+      event.target.value="";
     }
   }
   function searchClick() {
     onSearch(city);
     setCity("");
+    
   }
     return <div className={s.searchbar}>
         <input className={s.input} onKeyDown={handleKeyDown} onChange={handleChange} type="text" placeholder="city.." />

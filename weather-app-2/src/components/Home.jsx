@@ -35,9 +35,9 @@ function Home()  {
     setCities([]);
   }
   
-  function onClose(keyNumber) {
-  console.log("close")
-  let array1 = cities.filter(c => c.id !== keyNumber);
+  function onClose(cardKey) {
+  console.log(cardKey)
+  let array1 = cities.filter(c => c.key !== cardKey);
   setCities(array1);
   
   }

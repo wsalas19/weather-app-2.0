@@ -1,9 +1,12 @@
 import Card from "./Card";
+import React from 'react';
+import s from "./Cards.module.css"
 
-function Cards({array,onClose}) {
-    return <div>
+
+function Cards({cities,onClose}) {
+    return <div className={s.cardcontainer}>
       {
-        array.map((city,i)=>{
+        cities.map((city,i)=>{
           return <Card
           key={i} 
           id={city.id}
