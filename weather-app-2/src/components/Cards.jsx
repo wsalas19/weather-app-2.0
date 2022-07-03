@@ -14,7 +14,7 @@ function Cards({cities,onClose}) {
           min={city.min} 
           max= {city.max} 
           img ={city.img} 
-          onClose={onClose}
+          onClose={()=>onClose(city.id)}
           />
         })
       }

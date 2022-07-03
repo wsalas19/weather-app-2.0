@@ -5,19 +5,23 @@
     margin: 0px;
     padding: 0px;
     text-decoration: none;
-
 }
 
 html{
     margin: 0px;
     padding: 0px;
     scroll-behavior: smooth;
+    overflow: scroll;
+    overflow-x: hidden;
+   
 }
 body{
     margin: 0px;
     padding: 0px; 
     text-decoration: none;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 a{
@@ -26,4 +30,9 @@ a{
 
 button:hover{
     cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
 }

@@ -3,7 +3,8 @@
 .bar{
     background-color: 	#232f3e;
     display: flex;
-    height: 65px;
+    height: 75px;
+    width: 100%;
 }
 .left{
     display: flex;
@@ -24,10 +25,11 @@
 .title{
     font-family: 'Pacifico', cursive;
     color: aliceblue;
+    padding: 10px;
 }
 .cloud{
    width: 58px;
-   margin-right: 20px;
+   margin-right: 7px;
 }
 .links{
   padding: 10px;
@@ -36,4 +38,5 @@
 }
 .links:hover{
     cursor: pointer;
+    color: #266dd3;
 }

@@ -37,12 +37,12 @@ function Home()  {
   
   function onClose(cardKey) {
   console.log(cardKey)
-  let array1 = cities.filter(c => c.key !== cardKey);
+  let array1 = cities.filter(c => c.id !== cardKey);
   setCities(array1);
   
   }
 
-  let nothing = <div className={s.nothing}><h1>No cities to show.</h1></div>
+  let nothing = <div className={s.nothing}><p>No cities to show.</p></div>
 
 
 

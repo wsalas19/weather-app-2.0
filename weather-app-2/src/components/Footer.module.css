@@ -1,0 +1,30 @@
+.footer{
+    background-color: #232f3e;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+   
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    margin-left: 25px;
+}
+.socials{
+    display: flex;
+    justify-content: space-evenly;
+    width: 25%;
+    flex-direction: row;
+    margin-right: 25px;
+
+}
+.img{
+    width: 45px;
+    filter: invert();
+}
+a{
+    color: rgb(167, 167, 167);
+}

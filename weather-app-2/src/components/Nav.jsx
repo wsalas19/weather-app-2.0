@@ -13,6 +13,7 @@ function NavBar() {
 
         <NavLink className={s.links} to="/"> Home</NavLink>
         <NavLink className={s.links} to="/about"> About </NavLink>
+        <NavLink className={s.links} to="/contact"> Contact </NavLink>
         
         </div>
 
