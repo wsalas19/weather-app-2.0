@@ -1,8 +1,23 @@
 import React from 'react';
+import s from "./Contact.module.css"
 function Contact() {
-    return ( <div>
-        <p>soy un contact, aca pondré inputs como este:</p>
-        <input type="email" placeholder='email...'/>
+  
+
+    return ( 
+        <div className={s.contact}>
+        <h2 className={s.title}>Contact Me!</h2>
+        <form className={s.form} onSubmit={()=>alert("message has been sent, thanks for visiting my page! :)")}>
+            <label>
+            E-mail:
+                <input type="email" placeholder='E-mail...'/>
+            </label>
+            <label>
+            Message:
+                <input className={s.message} type="text" placeholder='Share your thoughts.'/>
+            </label>
+            <input className={s.btn} type="submit" value="Submit " />
+        </form>
+        
 
     </div> );
 }

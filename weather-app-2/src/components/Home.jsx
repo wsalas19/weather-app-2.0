@@ -1,50 +1,10 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Cards from './Cards';
 import SearchBar from './SearchBar';
 import s from "./Home.module.css"
-function Home()  {
-
-    const [cities, setCities] = useState([]);
-
-  function onSearch(ciudad) {
-    console.log("search")
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=6cca0b71257862541d2991b6986410f0`).then(r=> r.json()).then((recurso)=>{
-      if (recurso.main !== undefined) {
-        const ciudad ={
-          min: Math.round(recurso.main.temp_min),
-          max: Math.round(recurso.main.temp_max),
-          img: recurso.weather[0].icon,
-          id: recurso.id,
-          wind: recurso.wind.speed,
-          temp: recurso.main.temp,
-          name: recurso.name,
-          weather: recurso.weather[0].main,
-          clouds: recurso.clouds.all,
-          latitud: recurso.coord.lat,
-          longitud: recurso.coord.lon
-        };
-        setCities(oldCities => [...oldCities, ciudad]);
-      }else{
-        alert("City not found")
-      }
-    });
-  }
-
-  function onClear() {
-    console.log("clear")
-    setCities([]);
-  }
-  
-  function onClose(cardKey) {
-  console.log(cardKey)
-  let array1 = cities.filter(c => c.id !== cardKey);
-  setCities(array1);
-  
-  }
+function Home({cities,onClose,onClear,onSearch})  {
 
   let nothing = <div className={s.nothing}><p>No cities to show.</p></div>
-
-
 
     return ( 
 

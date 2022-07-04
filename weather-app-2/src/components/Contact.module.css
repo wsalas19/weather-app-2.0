@@ -1,0 +1,59 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: solid rgb(213, 213, 213) 1px;
+    border-radius: 5px;
+    padding: 25px;
+    height: 500px;
+    /* Arriba | Derecha | Abajo | Izquierda */
+    margin: 50px 50px 50px 100px;
+}
+.title{
+align-self: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 500px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 214, 7);
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    color: #232f3e;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 9px;
+    align-self: center;
+}
+.btn:hover{
+    background-color: #059862 ;
+    color: aliceblue;
+    cursor: pointer;
+}
+input{
+    padding: 5px;
+    border-radius: 3px;
+    width: 350px;
+    display: flex;
+    border: solid rgb(168, 168, 168) 1px;
+}
+.input:focus{
+    border: 1px solid #266dd3
+}
+.message{
+    resize: none;
+    height: 200px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.message::placeholder{
+    position: absolute;
+}

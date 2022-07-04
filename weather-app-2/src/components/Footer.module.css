@@ -25,6 +25,12 @@
     width: 45px;
     filter: invert();
 }
+.img:hover{
+    
+    filter:brightness(0) saturate(100%) invert(29%) 
+    sepia(88%) saturate(1110%) hue-rotate(193deg)
+     brightness(102%) contrast(92%);
+}
 a{
     color: rgb(167, 167, 167);
 }

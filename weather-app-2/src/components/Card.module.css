@@ -24,6 +24,11 @@
     align-self: flex-start;
     margin-top: -2px;
     margin-left: 14px;
+    color: black;
+    transition: ease-in 0.2s;
+}
+.name:hover{
+    color:#ff0f7b;
 }
 .info{
     display: flex;
