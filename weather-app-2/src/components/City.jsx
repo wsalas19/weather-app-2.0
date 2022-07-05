@@ -1,7 +1,10 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import { useParams } from 'react-router-dom';
 import s from "./City.module.css"
 function City({city,getCityDetail}) {
+    useEffect(() => {
+        document.title = city.name;
+      });
     const params = useParams();
     if(params.cityId) getCityDetail(params.cityId);
     return ( 

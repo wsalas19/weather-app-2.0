@@ -1,7 +1,9 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import s from "./Contact.module.css"
 function Contact() {
-  
+    useEffect(() => {
+        document.title = 'Contact';
+      });
 
     return ( 
         <div className={s.contact}>

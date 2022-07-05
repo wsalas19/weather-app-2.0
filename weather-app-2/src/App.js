@@ -12,10 +12,11 @@ function App() {
   
   const [cities, setCities] = useState([]);
   const [city,setCity] = useState("")
+  const WEATHER_API=process.env.REACT_APP_WEATHER_API_KEY;
 
   function onSearch(ciudad) {
     console.log("search")
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=6cca0b71257862541d2991b6986410f0&units=metric`).then(r=> r.json()).then((recurso)=>{
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${WEATHER_API}&units=metric`).then(r=> r.json()).then((recurso)=>{
       if (recurso.main !== undefined) {
         const ciudad ={
           min: Math.round(recurso.main.temp_min),
