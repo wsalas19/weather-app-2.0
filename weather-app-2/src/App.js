@@ -13,6 +13,17 @@ function App() {
   const [cities, setCities] = useState([]);
   const [city,setCity] = useState("")
   const WEATHER_API=process.env.REACT_APP_WEATHER_API_KEY;
+  const PHOTO_API=process.env.REACT_APP_PLACES_API_KEY;
+
+/*   function getPhoto(name) {
+    fetch(`https://api.unsplash.com/photos/?client_id=${PHOTO_API}&query=${name}`).then((data)=>data.json()).then(response=>{
+      if (response !==undefined){
+        const url = response[0].urls.regular;
+        console.log(url)
+        return url;
+      } else {return null}
+    })
+  } */
 
   function onSearch(ciudad) {
     console.log("search")
@@ -67,7 +78,7 @@ function App() {
 
     <Routes>
       <Route exact path="/" element={<Home onClear={onClear} onClose={onClose} onSearch={onSearch} cities={cities}/>}/>
-      <Route path="/about" element={<About />}/>
+      <Route path="/about" element={<About api={PHOTO_API}/>}/>
       <Route path="/contact" element={<Contact/>}/>
       <Route path="/city/:cityId" element={<City city={city} getCityDetail={getCityDetail}/>}/>
   
