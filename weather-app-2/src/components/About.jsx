@@ -1,6 +1,6 @@
 import React,{useEffect} from 'react';
 
-function About({api}) {
+function About({getPhoto}) {
     useEffect(() => {
         document.title = 'About';
       });
@@ -11,7 +11,7 @@ function About({api}) {
         404 error - page in progress
 
         </h3>
-        <img src="" alt="city-landscape" />
+        <img src={getPhoto("london")} alt="city-landscape" />
     </div> );
 }
 

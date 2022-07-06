@@ -16,7 +16,7 @@ align-self: center;
 .form{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-bottom: 500px;
 }
 
@@ -30,7 +30,7 @@ align-self: center;
     color: #232f3e;
     font-weight: bold;
     margin-top: 20px;
-    padding: 9px;
+    padding: 8px 16px;
     align-self: center;
 }
 .btn:hover{
@@ -53,6 +53,8 @@ input{
     height: 200px;
     width: 100%;
     box-sizing: border-box;
+    display: flex;
+    align-self: flex-start;
 }
 .message::placeholder{
     position: absolute;

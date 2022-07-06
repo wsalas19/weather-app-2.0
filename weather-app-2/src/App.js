@@ -14,12 +14,30 @@ function App() {
   const [city,setCity] = useState("")
   const WEATHER_API=process.env.REACT_APP_WEATHER_API_KEY;
   const PHOTO_API=process.env.REACT_APP_PLACES_API_KEY;
+  const technologies = [
+    {
+      name:"Javascript",
+      src: "https://logodownload.org/wp-content/uploads/2022/04/javascript-logo-1.png"
+    },
+    {
+      name:"HTML",
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png"
+    },
+    {
+      name:"CSS",
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png"
+    },
+    {
+      name:"React",
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+    }
+  ];
 
-/*   function getPhoto(name) {
-    fetch(`https://api.unsplash.com/photos/?client_id=${PHOTO_API}&query=${name}`).then((data)=>data.json()).then(response=>{
-      if (response !==undefined){
+ /*  function getPhoto(name) {
+    fetch(`https://api.unsplash.com/photos/?client_id=${PHOTO_API}&query=london`).then((data)=>data.json()).then(response=>{
+      console.log(response)
+      if (response !== undefined){
         const url = response[0].urls.regular;
-        console.log(url)
         return url;
       } else {return null}
     })
@@ -78,7 +96,7 @@ function App() {
 
     <Routes>
       <Route exact path="/" element={<Home onClear={onClear} onClose={onClose} onSearch={onSearch} cities={cities}/>}/>
-      <Route path="/about" element={<About api={PHOTO_API}/>}/>
+      <Route path="/about" element={<About getPhoto={getPhoto}/>}/>
       <Route path="/contact" element={<Contact/>}/>
       <Route path="/city/:cityId" element={<City city={city} getCityDetail={getCityDetail}/>}/>
   

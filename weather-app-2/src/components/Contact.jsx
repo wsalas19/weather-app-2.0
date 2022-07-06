@@ -10,11 +10,11 @@ function Contact() {
         <h2 className={s.title}>Contact Me!</h2>
         <form className={s.form} onSubmit={()=>alert("message has been sent, thanks for visiting my page! :)")}>
             <label>
-            E-mail:
+            E-mail
                 <input type="email" placeholder='E-mail...'/>
             </label>
             <label>
-            Message:
+            Message
                 <input className={s.message} type="text" placeholder='Share your thoughts.'/>
             </label>
             <input className={s.btn} type="submit" value="Submit " />
