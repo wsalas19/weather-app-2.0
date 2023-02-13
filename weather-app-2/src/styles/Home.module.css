@@ -1,8 +1,11 @@
-.nothing{
-    display: flex;
-    justify-content: center;
-    color:rgb(161, 161, 161);
-    font-size:large;
-    height: 378px;
+.nothing {
+	display: flex;
+	justify-content: center;
+	color: rgb(161, 161, 161);
+	font-size: large;
+	height: 378px;
+}
 
+.mainContainer {
+	height: calc(100vh - 190px);
 }
