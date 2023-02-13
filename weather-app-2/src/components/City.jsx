@@ -5,8 +5,11 @@ function City({city,getCityDetail}) {
     useEffect(() => {
         document.title = city.name;
       });
+
     const params = useParams();
+
     if(params.cityId) getCityDetail(params.cityId);
+    
     return ( 
     <div className={s.cityDetail}>
         <div className={s.head}>
